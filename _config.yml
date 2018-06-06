@@ -1,0 +1,260 @@
+# Site settings
+title: Abhishek Saxena
+tagline: "Software Engineer by profession, Developer by passion"
+email: abhisheksaxena2.12@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Code-Geek, Singer, Guitarist, Foodie and a Gamer.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://abhisheksaxena.in/" # the base hostname & protocol for your site
+logourl: /assets/images/logo.png # Site logo
+author: "Abhishek Saxena"
+author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
+
+resume:
+  name: Abhishek Saxena
+  title: Software Developer
+  address: Jaipur, Rajasthan, India
+  email: abhisheksaxena2.12@gmail.com
+  link: http://abhisheksaxena.in/
+  title: Software Developer
+  address: D-2 Malviya Marg, C-scheme,Jaipur, Rajasthan, India
+  experience:
+    - work1: 
+      company: Appirio India Cloud Solutions Pvt. Ltd
+      location: Jaipur, Rajasthan, India
+      title: Consultant
+      started: 2017
+      duration: (October 2017 - Present)
+      description: I worked as a Salesforce DevOps, writing CI scripts, maintaining CI/CD tools, integrating various VCS systems in our system, writing Docker Images, automating Salesforce Release Management using SalesforceDX.
+    - work2: 
+      company: Appirio India Cloud Solutions Pvt. Ltd
+      location: Jaipur, Rajasthan, India
+      title: Associate Consultant
+      started: 2016
+      duration: (October 2016 - September 2017)
+      description: I worked as a Salesforce Consultant, interacting with customers and developing apps using Salesforce CRM solutions including - building custom UI using Visual Force framework and writing custom logic using Apex, SOQL, JavaScript, jQuery and JS based third-party API's, ANT tool and data-loader for deployments and data actions.
+    - work3: 
+      company: Appirio India Cloud Solutions Pvt. Ltd
+      location: Jaipur, Rajasthan, India
+      title: Associate Consultant Trainee
+      started: 2015
+      duration: (November 2015 - October 2016)
+  internships:
+    - work1:
+      company: Metacube Software Private Limited
+      location: Jaipur, Rajasthan, India
+      title: Salesforce Intern
+      started: 2014
+      duration: (June 2014 - July 2014)
+      description: I developed cloud applications using Salesforce.com. ‘College Management System’ a Cloud-based app displaying college info, T&P info, campus selections, student's performance analysis using Salesforce CRM was developed by me. 
+    - work2:
+      company: IBM Centre of Excellence
+      location: Jaipur, Rajasthan, India
+      title: Mobile Application Developer
+      started: 2014
+      duration: (June 2014- July 2014)
+      description: My responsibilities included R&D using IBM tools on technologies mainly JEE, IBM Worklight. I developed a multi-platform mobile application ‘Faculty App’ using IBM Worklight to help the teachers’ login and check their time-table and attendance of the students in any particular lecture.    
+  educationHistory:
+    - education1:
+      organization: Swami Keshvanand Institute of Technology, Jaipur
+      degree: B.Tech
+      major: Computer Science
+      started: 2011
+      duration: (2011 - 2015)
+      description: During the course of four years I spent here. I leant, worked, made projects on various technologies. I secured 1st rank in the final sem in my class. Apart from academics, I actively took part in cultural activities like singing, playing guitar, organizing events etc.
+    - education2:
+      organization: Saint Xavier High School, Jaipur
+      degree: Senior Secondary
+      major: PCM with Computer Science
+      started: 2011
+      #duration: (2011 - 2015)
+      description: Studied 12 years in my alma-mater. Apart from being above average in studies, I was a state level swimmer, a singer and a musician.
+    - education3:
+      organization: Saint Xavier High School, Jaipur
+      degree: Secondary
+      #major: PCM with Computer Science
+      started: 2009
+  languages:
+    - language1:
+      name: Hindi
+      proficiency: Native
+    - language2:
+      name: English
+      proficiency: Fluent
+    - language3:
+      name: Spanish
+      proficiency: Elementary
+  programmingSkills:
+    - skill1:
+      name: Apex
+      percentage: 100%
+    - skill2:
+      name: Visualforce
+      percentage: 80%
+    - skill3:
+      name: Docker
+      percentage: 75%
+    - skill4:
+      name: Bash
+      percentage: 60%
+    - skill5:
+      name: YML
+      percentage: 100%
+    - skill6:
+      name: Node.JS
+      percentage: 60%
+    - skill3:
+      name: JSE
+      percentage: 100%
+    - skill4:
+      name: Android
+      percentage: 80%
+    - skill5:
+      name: Python
+      percentage: 60%
+    - skill6:
+      name: Web Development (Front/Back)
+      percentage: 70%
+  projects:
+    - project1:
+      name: AppirioDX
+      technology: Salesforce
+      description: Pioneered DevOps transformation at Appirio, single handedly built CI and CD system from scratch for Salesforce Release management using SalesforceDX, GitLab and GitLab CI, writing shell scripts, docker images, node modules along the way.
+    - project2:
+      name: Stryker Corporation
+      technology: Salesforce
+      description: Implemented solution for Japanese clientele using multi-language and multi-currency features of Salesforce. Mastered Bitbucket and Bitbucket Pipelines for VCS and CI respectively.
+    - project3:
+      name: The Travel Corporation
+      technology: Salesforce
+      description: Worked with REST API's, built several VisualForce pages to be rendered as PDF’s to serve as Tour Itineraries, Hotel’s rooming lists, Daily Meal menu’s and passengers special needs, wrote some of the most complex programming logics using Apex and built a schema to implement the same.
+    - project4:
+      name: Leukemia & Lymphoma Society
+      technology: Salesforce
+      description: Built complex functionality for the LLS NGO including Event Setup, Donation Management, fundraising and communities using Sales and Community Cloud.
+    - project5:
+      name: scheduLAWyer
+      link: https://play.google.com/store/apps/details?id=app.schedulawyer.com
+      technology: Android
+      description: An Android app to replace the manual diary of a lawyer with an electronic one. Appreciated and recommended by high-court judges and lawyers. Application has Customer base in over 20 countries all over the world.
+  awards:
+    - award1:
+      name: Hero In The Ranks
+      level: Appiro Inc., Jaipur
+      place: 
+      position: 
+      year: 2018
+      description:  Selected out of 500 other employees for going above and beyond for innovation, teamwork and customer satisfaction
+    - award2:
+      name: Pat On The Back
+      level: Appiro Inc., Jaipur
+      place: 
+      position: 
+      year: 2017
+      description:  Awarded with the Certificate of Excellence from Appirio India Team for the outstanding contribution to the company.
+    - award3:
+      name: Delivery Excellence
+      level: Appiro Inc., Jaipur
+      place: 
+      position: Winner (1st prize)
+      year: 2016
+      description:  This award is given to a team for successfully delivering a project and going above and beyond the expectations of customer and company.
+    - award4:
+      name: Pat On The Back
+      level: Appiro Inc., Jaipur
+      place: 
+      position: 
+      year: 2016
+      description:  Awarded with the Certificate of Excellence from Appirio India Team for the outstanding contribution to the company.
+    - award5:
+      name: Technical Project Exhibition
+      level: Inter-college
+      place: VGU, Jaipur
+      position: Winner (1st prize)
+      year: 2015
+      description:  I showcased my android project ‘scheduLAWyer’.
+    - award6:
+      name: Subito
+      level: National Level Software Development Marathon
+      place: JECRC, Jaipur
+      position: Winner (1st prize)
+      year: 2014
+      description: I developed a Chat Application ‘Me-Chat’ enabled with GUI, Desktop Notification and File sharing features using Java Socket Programming.
+    - award7:
+      name: Sports Meet
+      level: National Inter-college
+      place: JIM, Jaipur
+      position: Winner(1st prize)
+      year: 2012
+      description: Secured 1st position in National Inter College Sports Meet (Counter Strike), JIM, Jaipur; beating teams from 16 other states, August 2012. 
+  certifications:
+    - certification1:
+      name: Salesforce Certified Sales Cloud Consultant
+      description: (SU17), July 2017
+    - certification2:
+      name: Salesforce Certified Platform App Builder
+      description: (WI17), Mar 2017
+    - certification3:
+      name: Salesforce Certified Platform Developer I
+      description: (WI17), Nov 2016
+    - certification4:
+      name: Salesforce Certified Administrator
+      description: (SU16), July 2016
+    - certification5:
+      name: Microsoft Technology Associate, Microsoft Certified Professional
+      description: Windows OS, Software Development, Networking fundamentals, April 2014.
+    - certification6:
+      name: IBM Certified Associate Developer
+      description: Rational Application Developer for WebSphere Software v6.0, November 2013.
+# Theme customization - please change from the defaults!
+theme:
+  bg: /assets/images/background.jpg
+  # Color for sidebar bar, links, etc
+  highlight_color: "#205081" #205081" # "#272935"
+  # Social media links, leave blank to ignore
+  social: 
+    github: abhisheksaxena7
+    #twitter: 
+    facebook: abhisheksaxena7
+    gplus: +abhisheksaxena7
+    quora: Abhishek-Saxena-50
+    linkedin: abhisheksaxena7
+    # dribble: abhisheksaxena2.12
+    #pinterest: abhisheksaxena2.12
+
+  # Enable share buttons on post footer
+  show_share_buttons: true
+
+  # Show author picure, name and social links on post footer
+  show_author_info: true
+
+  # Disqus comments manager - shortname
+  disqus_shortname: abhisheksaxena7
+
+  # Google Analytics/Webmaster key, leave blank to ignore
+  google_analytics_key: UA-66369196-2 
+  google_webmaster_key: gobOOtE5E_1DBug8cei3xbvyZQ1y-pAyLQsinerrNiY
+
+# Build settings
+markdown: kramdown
+
+# Permalinks
+permalink:        pretty
+
+# Pagination config
+paginate: 5
+
+# Files/Folders to be excluded from generated _site folder
+exclude: 
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
+sass:
+  sass_dir: assets/css/_sass
+  style: :compressed

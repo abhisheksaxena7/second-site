@@ -1,0 +1,22 @@
+---
+layout: about
+---
+<div class="post" style="background-image:url({{site.theme.bg}})">
+
+  {% if page.banner_image %}
+  <div class="banner-image">
+    <img 
+        src="{{ "/assets/images/" | append: page.banner_image | prepend: site.baseurl | prepend: site.url }}" 
+        alt="{{ page.banner_image_alt }}">
+  </div>
+  {% endif %}
+
+  <header class="post-header">
+    <h1 class="post-title" style="color:#FFFFFF">{{ page.title }}</h1>
+  </header>
+
+  <article class="post-content" >
+    <span style="color:#FFFFFF">{{ content }}</span>
+  </article>
+
+</div>

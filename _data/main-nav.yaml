@@ -1,0 +1,6 @@
+- title: "Resume"
+  href: "resume"
+- title: "Blog Archive"
+  href: "archive"
+- title: "Contact me" # Title/Caption of the menu item
+  href: "contactme" # the page where it pointed 

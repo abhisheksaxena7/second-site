@@ -1,0 +1,284 @@
+---
+layout: resume
+permalink: /resume/
+---
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-md-8">
+            {% if site.resume.experience %}
+                <h3 class="title with-icon"><span class="fa fa-briefcase cat-title"></span>Work Experience</h3>
+                <ul class="timeline">
+                    {% for work in site.resume.experience %}
+                        <li class="timeline-inverted">
+                            {% if work.started %}
+                                <div class="timeline-badge info">{{ work.started }}</div>
+                            {% endif %}
+                            <div class="timeline-panel grid-block">
+                                <div class="timeline-heading">
+                                    {% if work.company %}
+                                        <h4 class="timeline-title">{{ work.company }} </h4>
+                                    {% endif %}
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if work.title %}
+                                                {{ work.title }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if work.duration %}
+                                                <i class="fa fa-calendar"></i> {{ work.duration }} |
+                                            {% endif %}
+                                            {% if work.location %}
+                                                <i class="fa fa-map-marker"></i>  {{ work.location }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    {% if work.description %}
+                                        <p>{{ work.description }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% if site.resume.internships %}
+                <h3 class="title with-icon"><span class="fa fa-briefcase cat-title"></span>Internships</h3>
+                <ul class="timeline">
+                    {% for work in site.resume.internships %}
+                        <li class="timeline-inverted">
+                            {% if work.started %}
+                                <div class="timeline-badge info">{{ work.started }}</div>
+                            {% endif %}
+                            <div class="timeline-panel grid-block">
+                                <div class="timeline-heading">
+                                    {% if work.company %}
+                                        <h4 class="timeline-title">{{ work.company }} </h4>
+                                    {% endif %}
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if work.title %}
+                                                {{ work.title }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if work.duration %}
+                                                <i class="fa fa-calendar"></i> {{ work.duration }} |
+                                            {% endif %}
+                                            {% if work.location %}
+                                                <i class="fa fa-map-marker"></i>  {{ work.location }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    {% if work.description %}
+                                        <p>{{ work.description }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% if site.resume.educationHistory %}
+                <h3 class="title with-icon"><span class="fa fa-book cat-title"></span>Education History</h3>
+                <ul class="timeline">
+                    {% for education in site.resume.educationHistory %}
+                        <li class="timeline-inverted">
+                            {% if education.started %}
+                                <div class="timeline-badge info">{{ education.started }}</div>
+                            {% endif %}
+                            <div class="timeline-panel grid-block">
+                                <div class="timeline-heading">
+                                    {% if education.organization %}
+                                        <h4 class="timeline-title">{{ education.organization }}</h4>
+                                    {% endif %}
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if education.degree %}
+                                                {{ education.degree }}
+                                            {% endif %}
+                                            {% if education.major %}
+                                                , {{ education.major }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                    {% if education.duration %}
+                                        <p>
+                                            <small class="text-muted"><i class="fa fa-calendar"></i> {{ education.duration }}
+                                            </small>
+                                        </p>
+                                    {% endif %}
+                                </div>
+                                <div class="timeline-body">
+                                    {% if education.description %}
+                                        <p>{{ education.description }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% if site.resume.awards %}
+                <h3 class="title with-icon"><span class="fa fa-trophy cat-title"></span>Honours and Awards</h3>
+                <ul class="timeline">
+                    {% for award in site.resume.awards %}
+                        <li class="timeline-inverted">
+                            {% if award.year %}
+                                <div class="timeline-badge info">{{ award.year }}</div>
+                            {% endif %}
+                            <div class="timeline-panel grid-block">
+                                <div class="timeline-heading">
+                                    {% if award.name %}
+                                        <h4 class="timeline-title">{{ award.name }} </h4>
+                                    {% endif %}
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if award.level %}
+                                                {{ award.level }}
+                                            {% endif %}
+                                            {% if award.place %}
+                                                , {{ award.place }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if award.position %}
+                                                <span class="fa fa-trophy cat-title"> {{ award.position }}</span>
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    {% if award.description %}
+                                        <p>{{ award.description }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-md-4">
+            {% if site.resume.programmingSkills %}
+                <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
+                <div class="grid-block">
+                    <ul class="list-unstyled list-skills">
+                        {% for programmingSkill in site.resume.programmingSkills %}
+                            <li>
+                                {% if programmingSkill.name %}
+                                    <span class="caption-skill">{{ programmingSkill.name }}</span>
+                                {% endif %}
+                                {% if programmingSkill.percentage %}
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: {{ programmingSkill.percentage }}">
+                                            <span>{{ programmingSkill.percentage }} </span>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            {% if site.resume.languages %}
+                <div class="deviter"></div>
+                <h3 class="title with-icon"><span class="fa fa-globe cat-title"></span> Language Skills</h3>
+                <div class="grid-block">
+                    <ul class="list-unstyled list-strip">
+                        {% for language in site.resume.languages %}
+                            {% if language.name %}
+                                {% if language.proficiency %}
+                                    <li>
+                                        <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float">{{ language.proficiency }}</span>{{ language.name }}
+                                    </li>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            {% if site.resume.projects %}
+                <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Projects</h3>
+                <div class="grid-block">
+                <ul style="list-style-type:disc">
+                
+                    {% for project in site.resume.projects %}
+                        <li>
+                                <div class="timeline-heading">
+                                    {% if project.link %}
+                                        <h4 class="timeline-title"><a href="{{ project.link }}">{{ project.name }}</a></h4>
+                                    {% else %}
+                                        <h4 class="timeline-title">{{ project.name }}</h4>
+                                    {% endif %}
+                                    <p>
+                                        <small class="text-muted">
+                                            {% if project.technology %}
+                                                {{ project.technology }}
+                                            {% endif %}
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    {% if project.description %}
+                                        <p>{{ project.description }}</p>
+                                    {% endif %}
+                                </div>
+                        </li>
+                        <br/>
+                    {% endfor %}
+                </div>    
+                </ul>
+            {% endif %}
+                <div class="deviter"></div>
+                <h3 class="title with-icon"><span class="fa fa-dribbble cat-title"></span> Hobbies</h3>
+                <div class="grid-block">
+                    <div class="container-fluid">
+                        <div class="row one">
+                            <div class="col-md-4"><img src="/assets/images/guitar1.png"><h4>Guitarist</h4></div>
+                            <div class="col-md-4"><img src="/assets/images/sing5.png"><h4>Singer</h4></div>
+                            <div class="col-md-4"><img src="/assets/images/piano.png"><h4>Keyboardist</h4></div>
+                        </div>
+                        <div class="row two">
+                            <div class="col-md-4"><img src="/assets/images/swimming1.png"><h4>Swimmer</h4></div>
+                            <div class="col-md-4"><img src="/assets/images/man216.png"><h4>Novels</h4></div>
+                            <div class="col-md-4"><img src="/assets/images/controller7.png"><h4>Gaming</h4></div>
+                        </div>
+                    </div>
+                </div>
+            {% if site.resume.certifications %}
+                <div class="deviter"></div>
+                <h3 class="title with-icon"><span class="fa fa-list-alt cat-title"></span> Certifications</h3>
+                <div class="grid-block">
+                    <ul class="list-unstyled list-strip">
+                        {% for certification in site.resume.certifications %}
+                            {% if certification.name %}
+                                {% if certification.description %}
+                                    <li>
+                                        <h4><b>{{ certification.name }}</b></h4>{{ certification.description }}
+                                    </li>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}    
+            <div class="deviter"></div>
+            <h3 class="title with-icon"><span class="fa fa-location-arrow cat-title"></span> Location</h3>
+            
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class = "grid-block" style='overflow:hidden;height:100%;width:100%;'><div id='gmap_canvas' style='height:306px;width:447px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://www.freevisitorcounters.com'>Free Visitor Counters</a> <script type='text/javascript' src='http://embedmaps.com/google-maps-authorization/script.js?id=65e63f36f0e225b6fd10cb3bc3a7e91fb8a95296'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(26.912737,75.80413399999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(26.912737,75.80413399999998)});infowindow = new google.maps.InfoWindow({content:'<strong>Abhishek Saxena</strong><br>D-2, Malviya marg, C-scheme<br>302001 Jaipur<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+            
+        </div>
+    </div>
+</div>

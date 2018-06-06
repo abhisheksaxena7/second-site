@@ -1,0 +1,21 @@
+<div class="header">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-sm-4">
+                <img src="/assets/images/avatar.jpg" title="Avatar" alt="My Avatar">
+                <h4>{{ site.resume.name }}</h4>
+                <p>{{ site.resume.title }}</p>
+                <p class="muted">{{ site.resume.address }}</p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-sm-4 visible-md-block visible-lg-block visible-sm-block">
+                <p><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:{{ site.resume.email }}"> {{ site.resume.email }} </a></p>
+                <p><i class="fa fa-linkedin-square fa-fw"></i> <a href="https://linkedin.com/in/{{ site.theme.social.linkedin }}" target="_blank"> linkedin.com/in/{{ site.theme.social.linkedin }} </a></p>
+                <p><i class="fa fa-facebook fa-fw"></i> <a href="https://facebook.com/{{ site.theme.social.facebook }}" target="_blank">  facebook.com/{{ site.theme.social.facebook }} </a></p>
+            </div>
+            <div class="col-sm-4 visible-md-block visible-lg-block">
+                <a href="{{site.url}}/docs/Resume.pdf" class="btn btn-dark"><i class="icon-file icon-white"></i> Download.pdf</a>
+            </div>
+        </div>
+    </div>
+</div>
